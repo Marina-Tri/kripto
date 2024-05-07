@@ -1,28 +1,65 @@
-.courses {
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Set body background color and font family */
+body {
+    background-color: #f5ee94;
+    font-family: Arial, sans-serif;
+}
+  
+/* Center the card in the middle of the page */
+.container {
     display: flex;
-    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
-.courses > *:first-child {
-    margin-left: 0;
+  
+/* Style the card */
+.card {
+    background-color: #f4f4f4;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.courses > *:last-child {
-    margin-right: 0;
+  
+/* Style the form title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
-
-.courses > * {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
+  
+/* Style the course items */
 .course-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
 }
-.course-item-title {
-    font-weight: 700;
-    font-size: 18px;
+  
+/* Style the select label */
+label {
+    display: block;
+    margin-bottom: 5px;
 }
-.course-item-value {
-    font-size: 32px;
-    font-weight: 300;
+  
+/* Style the select input */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+  
+/* Style the selected option */
+option[selected] {
+    font-weight: bold;
 }
